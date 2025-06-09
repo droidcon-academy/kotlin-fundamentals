@@ -1,18 +1,11 @@
 package section_2
 
 fun main() {
-    val numberOfChats = 50
-    val unreadChatCount = 21
-    println(numberOfChats - unreadChatCount)
-    val timeSpent = 1_113_536_540
-    println(timeSpent)
-    var appRating = 4.2
-    appRating = 4.4
-    println(appRating)
-    val isLoggedIn = true
-    println(isLoggedIn)
-    val firstLetter = 'D'
-    println(firstLetter)
-    val phoneNumber = "+9899999999"
-    println(phoneNumber)
+    val name = "Alice"
+    val birthYear = 1990
+    var currentYear = 2025
+    val age = currentYear - birthYear
+    println("$name's age: $age")
+    currentYear = 2026
+    println("$name's age next year: ${currentYear - birthYear}")
 }

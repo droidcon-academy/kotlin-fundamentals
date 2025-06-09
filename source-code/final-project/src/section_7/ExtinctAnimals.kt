@@ -10,6 +10,9 @@ fun main() {
         "Sunda Island Tiger",
         "Tapanuli Orangutan"
     )
-    for (element in animals)
-        println(element)
+
+    // animals[8] = "Dragon Lizard" // This will cause crash
+
+    for (animal in animals)
+        println(animal)
 }

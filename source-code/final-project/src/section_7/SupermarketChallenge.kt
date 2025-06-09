@@ -1,23 +1,18 @@
 package section_7
 
 fun main() {
+    // Creating our customer databases for each branch
     val cairoCustomers = mutableSetOf<String>()
-    cairoCustomers.add("Kotlin")
-    cairoCustomers.add("Lollipop")
+    cairoCustomers.add("Jordan")
+    cairoCustomers.add("Riley")
+    cairoCustomers.add("Casey")
 
     val newDelhiCustomers = mutableSetOf<String>()
-    newDelhiCustomers.add("Java")
-    newDelhiCustomers.add("Kotlin")
-
-    val allCustomers = cairoCustomers union newDelhiCustomers
-    println(allCustomers)
-
-    val globalCustomers = cairoCustomers intersect newDelhiCustomers
-    println(globalCustomers)
-
-    val cairoLocalCustomers = cairoCustomers subtract newDelhiCustomers
-    println(cairoLocalCustomers)
+    newDelhiCustomers.add("Alex")
+    newDelhiCustomers.add("Sam")
+    newDelhiCustomers.add("Jordan")
+    newDelhiCustomers.add("Riley")
 
     val newDelhiLocalCustomers = newDelhiCustomers subtract cairoCustomers
-    println(newDelhiLocalCustomers)
+    println("New Delhi-only customers: $newDelhiLocalCustomers")
 }
